@@ -1,0 +1,7 @@
+@EndUserText.label: 'Test Service Definition 01'
+define service Z_TestServiceDef01 {
+  expose ZI_TestRevisionListExternal as Revisions;
+  expose ZI_PLANTSTDVH;
+  expose ZI_PMNotifTypeVH;
+  expose ZI_MAINTPLNRGRPSTDVH;
+}

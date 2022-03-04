@@ -1,0 +1,16 @@
+unmanaged implementation in class zbp_i_testrevisionlistexternal unique;
+//strict; //Comment this line in to enable strict mode. The strict mode is prerequisite to be future proof regarding syntax and to be able to release your BO.
+
+define behavior for ZI_TestRevisionListExternal //alias <alias_name>
+//late numbering
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  field ( readonly ) Revision;
+  create;
+  update;
+  delete;
+
+  action ( features : instance ) createAssignNotif parameter ZAI_NotifHeader_Create result [1] $self;
+}

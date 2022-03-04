@@ -1,0 +1,5 @@
+ implementation abstract;
+ define behavior for ZNOTIFHEADERB22D58B6B0
+  {
+  create;
+ }
